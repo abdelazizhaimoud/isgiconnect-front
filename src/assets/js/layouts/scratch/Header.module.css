@@ -1,0 +1,39 @@
+/* @media (max-width:) {
+    
+} */
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../fonts/ComicSansMS.ttf');
+}
+.header{
+    height :90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-weight: bold;
+    box-shadow: 0 0 1px 1px rgba(184, 184, 184, 0.534);
+    background-color: #f8f8f8;
+}
+.LogoContainer{
+    position: absolute;
+    height: 86px;
+    width: 86px;
+    left: 200px;
+}
+.LoginRegisterContainer{
+    position: absolute;
+    right: 50px;
+    height: 40px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+.LoginContainer{
+    width: 100px;
+    height: 100%;
+}
+.RegisterContainer{
+    width: 50%;
+    width: 100px;
+}
