@@ -55,7 +55,7 @@ function Index() {
                       to='/accueil' 
                       className="text-black font-bold uppercase text-sm px-5 py-2 rounded hover:text-green-500 transition-colors"
                     >
-                      <div className="nav-link">Accueil <span className="sr-only">(current)</span></div>
+                      <div className="nav-link">Accueil de moi <span className="sr-only">(current)</span></div>
                     </Link>
                   </li>
                   <li>
