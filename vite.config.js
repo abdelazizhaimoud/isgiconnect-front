@@ -22,7 +22,14 @@ export default defineConfig({
     css: {
         postcss: './postcss.config.js',
       },
-    server: {
+      server: {
+        host: '0.0.0.0',
         port: 3000,
+        allowedHosts: [
+          'isgiconnect.space',
+          'www.isgiconnect.space',
+          'localhost',
+          '127.0.0.1'
+        ]
       },
 });
