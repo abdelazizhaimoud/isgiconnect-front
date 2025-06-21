@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import axios from '../../api/axios';
+import axios from '../../api/getUser';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 

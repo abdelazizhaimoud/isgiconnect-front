@@ -48,7 +48,7 @@ function PostsFeed() {
   const fetchPosts = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/api/posts?page=${currentPage}`);
+      const response = await axios.get(`/api/posts?page=${currentPage}`);
       
       if (response.data.success) {
         setPosts(response.data.data.data);

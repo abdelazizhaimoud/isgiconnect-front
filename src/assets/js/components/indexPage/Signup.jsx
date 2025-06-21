@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import {axiosClient as axios} from '../../api/axios'
+import axios from '../../api/getUser'
 import { useEffect } from 'react'
 
 
@@ -21,9 +21,6 @@ function Signup() {
 
     const Register = async () => {
         try {
-          // Fetch CSRF token first
-          await axios.get('/sanctum/csrf-cookie');
-          // Then send the registration request
           const response = await axios.post('/register', globalState);
           console.log('Registration successful:', response.data);
         } catch (error) {

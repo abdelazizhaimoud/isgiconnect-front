@@ -21,6 +21,7 @@ import Content from './assets/js/components/New/Content/Content.jsx';
 import Chat from './assets/js/components/New/Chat/Chat.jsx';
 import Requests from './assets/js/components/SideBar/Friends/Requests.jsx';
 import GroupRoutes from './assets/js/routes/group.routes'
+import WebSocket from './assets/js/components/New/WebSocket';
 function App() { 
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<SignInSignUp flag={true} />} />
           <Route path="/signup" element={<SignInSignUp flag={false} />} />
+          <Route path="/websocket" element={<WebSocket />} />
           {/* Protected Routes */}
           <Route element={<ProtectedRoute allowedRoles={['student']} />}>
             <Route path="/student/dashboard" element={<Dashboard />}>
