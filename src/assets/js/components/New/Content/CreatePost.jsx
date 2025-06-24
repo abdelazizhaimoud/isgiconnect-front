@@ -56,7 +56,6 @@ const SimpleCreatePost = ({ onPostCreated, isLoading = false }) => {
           'Content-Type': 'multipart/form-data',
           'Accept': 'application/json',
         },
-        withCredentials: true
       });
 
       toast.success('Post created successfully!');

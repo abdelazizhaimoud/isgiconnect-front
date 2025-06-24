@@ -6,7 +6,6 @@ const axiosClient = axios.create({
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest',
   },
-    withCredentials: true,
     withXSRFToken: true,
 })
 export default axiosClient;
